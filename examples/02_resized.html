@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Grayscale - Resized example</title>
+    <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script src="/javascripts/jquery.grayscale.js"></script>
+    <style type="text/css">
+      img.resized {
+        width:400px;
+        height:200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/images/unicorn.jpg" alt="Unicorn" class="resized" />
+    
+    <p>If the second image wasn't grayscaled, please check the JavaScript console for security errors. <strong>Use a local webserver!</strong></p>
+    <p><a href="/">« Back to all examples</a></p>
+    
+    <script>
+      $(document).ready(function() {
+        $('img.resized').grayscale();
+      });
+    </script>
+  </body>
+</html>
